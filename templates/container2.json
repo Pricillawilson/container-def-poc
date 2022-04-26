@@ -1,0 +1,14 @@
+{
+    "name" : "${drupal_name}",
+    "image" : "${drupal_image}",
+    
+   "memory": ${drupal_memory},
+    "networkMode" : "awsvpc",
+    "portMappings" : [
+      {
+        "containerPort" : ${drupal_port}
+      }
+    ] 
+    
+ }
+

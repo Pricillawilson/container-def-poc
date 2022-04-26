@@ -1,0 +1,26 @@
+
+    {
+        "name": "${game_name}",
+        "image": "${game_image}",
+        "cpu": ${game_cpu},
+        "memory": ${game_memory},
+        "networkMode": "awsvpc",
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+              "awslogs-group": "/ecs/app",
+              "awslogs-region": "${aws_region}",
+              "awslogs-stream-prefix": "ecs"
+            }
+        },
+        "portMappings": [
+          {
+            "containerPort": ${game_port}
+            
+          }
+        ]
+      }
+    
+  
+  
+    
